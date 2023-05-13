@@ -17,12 +17,18 @@ nav {
 	/* height: 4vw; */
 	height: 78.8px;
 }
+
 a{
 	color: #86C332;
 	text-decoration: none;
 	margin:auto 20px;
 	font-size: 1.3rem;
 	font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    nav a {
+      margin: auto 10px;
+    }
 }
 /* Gallery code here */
 .gallery {
@@ -55,7 +61,7 @@ img:hover{
 	-webkit-transform:scale(1.03);
 	-ms-transform: scale(1.03);
 	transition: 0.4s ease;
-	filter: blur(2.5px);
+	/* filter: blur(2.5px); */
 }
 img:not(:hover){
 	transform: scale(1);
@@ -63,3 +69,4 @@ img:not(:hover){
 	-ms-transform: scale(1);
 	transition: 0.6s ease;
 }
+
