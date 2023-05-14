@@ -26,20 +26,20 @@ a{
 	font-weight: bold;
 }
 /* mobile media query */
-@media (max-width: 576px) {
+@media (max-width: 300px) {
 	a{
-		margin: auto 12px;
+		margin: auto 1px;
 		font-size: 1rem;
 	}
-  }
-
+  } 
 /* tablet media query */
-@media (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
 	a{
-		margin: auto 12px;
+		margin: auto 0px;
 		font-size: 1rem;
 	}
   }
+   
 /* Gallery code here */
 .gallery {
 	display: flex;
