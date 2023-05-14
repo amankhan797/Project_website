@@ -13,12 +13,12 @@ nav {
 	margin-top: 0.3rem;
 	display:flex;
 	justify-content:center;
-	background-color: #474B4F;
+	background: #474B4F;
 	/* height: 4vw; */
 	height: 78.8px;
 }
 
-a{
+#a{
 	color: #86C332;
 	text-decoration: none;
 	margin:auto 20px;
@@ -27,19 +27,29 @@ a{
 }
 /* mobile media query */
 @media (max-width: 300px) {
-	a{
+	#a{
 		margin: auto 2.2px;
 		font-size: 0.7rem;
 	}
   } 
 /* tablet media query */
 @media (min-width: 300px) and (max-width: 768px) {
-	a{
-		margin: auto 10px;
+	#a{
+		margin: auto 5px;
 		font-size: 0.9rem;
 	}
   }
-   
+
+.intro{
+	display:flex;
+	justify-content:center;
+	background: #222629;
+}
+.intro p{
+	color: #73af2a;
+	width: 80%;
+	text-align: center;
+}
 /* Gallery code here */
 .gallery {
 	display: flex;
@@ -51,7 +61,6 @@ a{
 	max-width: 1400px;
 	margin: 0 auto;
 	padding: 20px 10px;
-	/* position: absolute; */
 }
 .gallery img {
 	width: 100%;
@@ -61,17 +70,14 @@ a{
 	border-radius: 10px;
 }
 .gallery::after {
-	/* content: ""; */
-	/* content: "this is me after hover"; */
 	width: 350px;
 }
 img:hover{
-	content: "this is me after hover";
 	transform: scale(1.03);
 	-webkit-transform:scale(1.03);
 	-ms-transform: scale(1.03);
 	transition: 0.4s ease;
-	/* filter: blur(2.5px); */
+	box-shadow: 0px 0px 20px black;
 }
 img:not(:hover){
 	transform: scale(1);
