@@ -29,14 +29,14 @@ a{
 @media (max-width: 300px) {
 	a{
 		margin: auto 1px;
-		font-size: 1rem;
+		font-size: 0.7rem;
 	}
   } 
 /* tablet media query */
 @media (min-width: 300px) and (max-width: 768px) {
 	a{
-		margin: auto 0px;
-		font-size: 1rem;
+		margin: auto 10px;
+		font-size: 0.9rem;
 	}
   }
    
