@@ -15,9 +15,8 @@ nav {
 	justify-content:center;
 	background: #474B4F;
 	/* height: 4vw; */
-	height: 78.8px;
+	height: 48.8px;
 }
-
 #a{
 	color: #86C332;
 	text-decoration: none;
@@ -50,6 +49,24 @@ nav {
 	width: 80%;
 	text-align: center;
 }
+.desc{
+	display: flex;
+	text-align: center;
+	align-items:center ;
+	justify-content: center;
+	margin-top: -0.8rem;
+}
+.desc h3{
+	padding-left:1rem;
+	padding-right:1rem;
+	font-size: 1.6rem;
+	color: orange;
+}
+#d_arrow{
+	height: 50px;
+	text-align: center;
+	cursor: none;
+}
 /* Gallery code here */
 .gallery {
 	display: flex;
@@ -62,7 +79,7 @@ nav {
 	margin: 0 auto;
 	padding: 20px 10px;
 }
-.gallery img {
+#img {
 	width: 100%;
 	max-width: 350px;
 	height: 300px;
@@ -72,7 +89,7 @@ nav {
 .gallery::after {
 	width: 350px;
 }
-img:hover{
+#img:hover{
 	transform: scale(1.03);
 	-webkit-transform:scale(1.03);
 	-ms-transform: scale(1.03);
