@@ -28,7 +28,7 @@ a{
 /* mobile media query */
 @media (max-width: 300px) {
 	a{
-		margin: auto 1px;
+		margin: auto 2.2px;
 		font-size: 0.7rem;
 	}
   } 
