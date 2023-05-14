@@ -25,11 +25,15 @@ a{
 	font-size: 1.3rem;
 	font-weight: bold;
 }
-/* @media screen and (max-width: 720px) {
-    nav a {
-      margin: auto 10px;
-    }
-} */
+/* mobile media query */
+@media (max-width: 576px) {
+	a{
+		margin: auto 12px;
+		font-size: 1rem;
+	}
+  }
+
+/* tablet media query */
 @media (max-width: 768px) {
 	a{
 		margin: auto 12px;
