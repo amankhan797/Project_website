@@ -24,6 +24,9 @@ nav {
 	font-size: 1.3rem;
 	font-weight: bold;
 }
+#a:active{
+	color: rgb(255, 187, 0);
+}
 /* mobile media query */
 @media (max-width: 300px) {
 	#a{
@@ -45,7 +48,8 @@ nav {
 	background: #222629;
 }
 .intro p{
-	color: #73af2a;
+	font-size: 1.2rem;
+	color: #ffffff;
 	width: 80%;
 	text-align: center;
 }
