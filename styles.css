@@ -7,7 +7,8 @@ body {
     margin: 0;
     background-color: #1A1A1D;
     color: #f5f6f7;
-    font-family: Tahoma;
+    font-family: 'Josefin Sans', sans-serif;
+	font-weight:700;
 }
 nav {
 	margin-top: 0.3rem;
@@ -27,21 +28,6 @@ nav {
 #a:active{
 	color: rgb(255, 187, 0);
 }
-/* mobile media query */
-@media (max-width: 300px) {
-	#a{
-		margin: auto 2.2px;
-		font-size: 0.7rem;
-	}
-  } 
-/* tablet media query */
-@media (min-width: 300px) and (max-width: 768px) {
-	#a{
-		margin: auto 5px;
-		font-size: 0.9rem;
-	}
-  }
-
 .intro{
 	display:flex;
 	justify-content:center;
@@ -87,8 +73,8 @@ nav {
 	width: 100%;
 	max-width: 350px;
 	height: 300px;
-	object-fit:cover;
 	border-radius: 10px;
+	object-fit: contain;
 }
 .gallery::after {
 	width: 350px;
@@ -106,4 +92,36 @@ img:not(:hover){
 	-ms-transform: scale(1);
 	transition: 0.6s ease;
 }
+/* mobile media query */
+@media (max-width: 300px) {
+	#a{
+		margin: auto 2.2px;
+		font-size: 0.7rem;
+	}
+	.gallery {
+		gap: 5px;
+		padding: 10px 5px;
+	}
+	#img {
+		height: 200px;
+		object-fit: contain;
+		overflow: hidden;
+	}
+  } 
+/* tablet media query */
+@media (min-width: 300px) and (max-width: 768px) {
+	#a{
+		margin: auto 5px;
+		font-size: 0.9rem;
+	}
+	.gallery {
+		gap: 10px;
+		padding: 15px 7px;
+	}
+	#img {
+		height: 250px;
+		object-fit: contain;
+		overflow: hidden;
+	}
+  }
 
