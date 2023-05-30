@@ -5,123 +5,382 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-color: #1A1A1D;
-    color: #f5f6f7;
     font-family: 'Josefin Sans', sans-serif;
 	font-weight:700;
 }
 nav {
-	margin-top: 0.3rem;
 	display:flex;
 	justify-content:center;
-	background: #474B4F;
-	/* height: 4vw; */
+    background-color: #242424;
 	height: 48.8px;
 }
 #a{
-	color: #86C332;
+	color: #ffbb00;
 	text-decoration: none;
 	margin:auto 20px;
 	font-size: 1.3rem;
 	font-weight: bold;
 }
-#a:active{
-	color: rgb(255, 187, 0);
+.container{
+    color: white;
+    background: linear-gradient(to right, #000000, #090909);
+    height: 668px;
+    display: flex;
 }
-.intro{
-	display:flex;
-	justify-content:center;
-	background: #222629;
+.left{
+    width: 60%;
 }
-.intro p{
-	font-size: 1.2rem;
-	color: #ffffff;
-	width: 80%;
-	text-align: center;
+.texts{
+    margin-left: 10rem;
+    margin-top: 9rem;
 }
-.desc{
-	display: flex;
-	text-align: center;
-	align-items:center ;
-	justify-content: center;
-	margin-top: -0.8rem;
+.head{
+    margin-bottom: -10px;
+    font-size: 1.4rem;
 }
-.desc h3{
-	padding-left:1rem;
-	padding-right:1rem;
-	font-size: 1.6rem;
-	color: orange;
+.name{
+    font-size:2.6rem;
+    font-family: 'Sacramento', cursive;
+    /* color: #86C332; */
+    animation: golwred 0.50s ease-in-out infinite alternate-reverse;
+
 }
-#d_arrow{
-	height: 50px;
-	text-align: center;
-	cursor: none;
+.head2{
+    font-size: 2.3rem;
 }
-/* Gallery code here */
-.gallery {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 20px 10px;
+.para{
+    /* padding-right: 1.5rem; */
+    font-size: 1.2rem;
+    margin-top: -20px;
 }
-#img {
-	width: 100%;
-	max-width: 350px;
-	height: 300px;
+#btn{
+    margin-right: 20px;
+    width: 6.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border-color: #ffbb00;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    animation: golwwhite 0.50s ease-in-out infinite alternate-reverse;
+}
+.SM_links{
+    margin-top:35px ;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+#github{
+    background-color:#ff8700;
+    height: auto;
+    width: 50px;
+    transition: transform 0.7s ease;
+}
+.logoimgs:hover{
+    transform: scale(1.2);
+}
+#linkedin{
+    margin-top: 7px;
+    background-color: #0a66c2;
+    height: auto;
+    width: 50px;
+    transition: transform 0.7s ease;
+}
+#whatsapp{
+    margin-top: 7px;
+    background-color: rgb(43, 255, 0);
+    height: auto;
+    width: 55px;
+    transition: transform 0.7s ease;
+}
+#insta{
+    margin-top: 7px;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    height: auto;
+    width: 50px;
+    transition: transform 0.7s ease;
+}
+
+/* right division */
+.right{
+    width: 40%;
+}
+.circle-img{
+    margin-top: 90px;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    overflow: hidden;
+    /* background-color: #ff0000; */
+}
+.homeimg{
+    margin-top: -40px;
+    /* margin-left: 30px; */
+    width: 100%;
+	max-width: 400px;
+	height: 600px;
 	border-radius: 10px;
-	object-fit: contain;
+	object-fit:cover;
+    display: block;
 }
-.gallery::after {
-	width: 350px;
+/* glow text red*/
+@keyframes golwred{
+    100%{
+        text-shadow:
+        0 0 1px #ffffff,
+        0 0 4px #ff0000,
+        0 0 11px #ff0000,
+        0 0 19px #ff0000,
+        0 0 40px #ff0000;
+    }
+    0%{
+        text-shadow:
+        0 0 1px #ffffff,
+        0 0 4px #ff0000,
+        0 0 10px #ff0000,
+        0 0 18px #ff0000,
+        0 0 38px #ff0000;
+    }  
 }
-#img:hover{
-	transform: scale(1.03);
-	-webkit-transform:scale(1.03);
-	-ms-transform: scale(1.03);
-	transition: 0.4s ease;
-	box-shadow: 0px 0px 20px black;
-}
-img:not(:hover){
-	transform: scale(1);
-	-webkit-transform:scale(1);
-	-ms-transform: scale(1);
-	transition: 0.6s ease;
+/* glow text white*/
+@keyframes golwwhite{
+    100%{
+        text-shadow:
+        0 0 3px #ffffff;
+    }
+    0%{
+        text-shadow:
+        0 0 3px #ffffff;
+    }
+    
 }
 /* mobile media query */
 @media (max-width: 300px) {
-	#a{
-		margin: auto 2.2px;
-		font-size: 0.7rem;
+    #a{
+		margin: auto 5px;
+		font-size: 0.9rem;
 	}
-	.gallery {
-		gap: 5px;
-		padding: 10px 5px;
-	}
-	#img {
-		height: 200px;
-		object-fit: contain;
-		overflow: hidden;
-	}
-  } 
+    body{
+        background-color: #090909;
+    }
+    .container{
+        color: white;
+        background: linear-gradient(to bottom, #000000, #090909);
+        height: auto;
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .left{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .texts{
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+    .head{
+        margin-bottom: -10px;
+        font-size: 1.2rem;
+    }
+    .head2{
+        font-size: 2.1rem;
+    }
+    .para{
+        font-size: 1rem;
+        margin-top: -18px;
+    }
+    .name{
+        font-size:2.4rem;
+        font-family: 'Sacramento', cursive;
+        animation: golwred 0.50s ease-in-out infinite alternate-reverse;
+    
+    }
+    #btn{
+        margin-right: 18px;
+        width: 5.5rem;
+        height: 2.3rem;
+        border-radius: 10px;
+        border-color: #ffbb00;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        animation: golwwhite 0.50s ease-in-out infinite alternate-reverse;
+    }
+    .SM_links{
+        margin-top:30px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #github{
+        background-color:#ff8700;
+        height: auto;
+        width: 40px;
+        transition:none;
+    }
+    #linkedin{
+        margin-top: 7px;
+        background-color: #0a66c2;
+        height: auto;
+        width: 40px;
+        transition:none;
+    }
+    #whatsapp{
+        margin-top: 7px;
+        background-color: rgb(43, 255, 0);
+        height: auto;
+        width: 45px;
+        transition: none;
+    }
+    #insta{
+        margin-top: 7px;
+        background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+        height: auto;
+        width: 40px;
+        transition:none;
+    }
+    .logoimgs:hover{
+        transform: none;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle-img{
+        margin-top: 1rem;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow:hidden;
+    }
+    .homeimg{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        left: 15px;
+        overflow: visible;
+        object-fit:cover;
+    }
+}   
 /* tablet media query */
 @media (min-width: 300px) and (max-width: 768px) {
 	#a{
 		margin: auto 5px;
 		font-size: 0.9rem;
 	}
-	.gallery {
-		gap: 10px;
-		padding: 15px 7px;
-	}
-	#img {
-		height: 250px;
-		object-fit: contain;
-		overflow: hidden;
-	}
-  }
-
+    body{
+        background-color: #090909;
+    }
+    .container{
+        color: white;
+        background: linear-gradient(to bottom, #000000, #090909);
+        height: auto;
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .left{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .texts{
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+    .head{
+        margin-bottom: -10px;
+        font-size: 1.2rem;
+    }
+    .head2{
+        font-size: 2.1rem;
+    }
+    .para{
+        font-size: 1rem;
+        margin-top: -18px;
+    }
+    .name{
+        font-size:2.4rem;
+        font-family: 'Sacramento', cursive;
+        animation: golwred 0.50s ease-in-out infinite alternate-reverse;
+    
+    }
+    #btn{
+        margin-right: 18px;
+        width: 5.5rem;
+        height: 2.3rem;
+        border-radius: 10px;
+        border-color: #ffbb00;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        animation: golwwhite 0.50s ease-in-out infinite alternate-reverse;
+    }
+    .SM_links{
+        margin-top:30px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #github{
+        background-color:#ff8700;
+        height: auto;
+        width: 40px;
+        transition:none;
+    }
+    #linkedin{
+        margin-top: 7px;
+        background-color: #0a66c2;
+        height: auto;
+        width: 40px;
+        transition:none;
+    }
+    #whatsapp{
+        margin-top: 7px;
+        background-color: rgb(43, 255, 0);
+        height: auto;
+        width: 45px;
+        transition: none;
+    }
+    #insta{
+        margin-top: 7px;
+        background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+        height: auto;
+        width: 40px;
+        transition:none;
+    }
+    .logoimgs:hover{
+        transform: none;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle-img{
+        margin-top: 1rem;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow:hidden;
+    }
+    .homeimg{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        left: 15px;
+        overflow: visible;
+        object-fit:cover;
+    }
+}
