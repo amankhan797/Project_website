@@ -71,7 +71,7 @@ nav {
     gap: 25px;
 }
 #github{
-    background-color:#ff8700;
+    /* background-color:#ff8700; */
     height: auto;
     width: 50px;
     transition: transform 0.7s ease;
@@ -81,21 +81,21 @@ nav {
 }
 #linkedin{
     margin-top: 7px;
-    background-color: #0a66c2;
+    /* background-color: #0a66c2; */
     height: auto;
     width: 50px;
     transition: transform 0.7s ease;
 }
 #whatsapp{
     margin-top: 7px;
-    background-color: rgb(43, 255, 0);
+    /* background-color: rgb(43, 255, 0); */
     height: auto;
     width: 55px;
     transition: transform 0.7s ease;
 }
 #insta{
     margin-top: 7px;
-    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    /* background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); */
     height: auto;
     width: 50px;
     transition: transform 0.7s ease;
@@ -217,28 +217,28 @@ nav {
         gap: 20px;
     }
     #github{
-        background-color:#ff8700;
+        /* background-color:#ff8700; */
         height: auto;
         width: 40px;
         transition:none;
     }
     #linkedin{
         margin-top: 7px;
-        background-color: #0a66c2;
+        /* background-color: #0a66c2; */
         height: auto;
         width: 40px;
         transition:none;
     }
     #whatsapp{
         margin-top: 7px;
-        background-color: rgb(43, 255, 0);
+        /* background-color: rgb(43, 255, 0); */
         height: auto;
         width: 45px;
         transition: none;
     }
     #insta{
         margin-top: 7px;
-        background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+        /* background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); */
         height: auto;
         width: 40px;
         transition:none;
@@ -332,28 +332,28 @@ nav {
         gap: 20px;
     }
     #github{
-        background-color:#ff8700;
+        /* background-color:#ff8700; */
         height: auto;
         width: 40px;
         transition:none;
     }
     #linkedin{
         margin-top: 7px;
-        background-color: #0a66c2;
+        /* background-color: #0a66c2; */
         height: auto;
         width: 40px;
         transition:none;
     }
     #whatsapp{
         margin-top: 7px;
-        background-color: rgb(43, 255, 0);
+        /* background-color: rgb(43, 255, 0); */
         height: auto;
         width: 45px;
         transition: none;
     }
     #insta{
         margin-top: 7px;
-        background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+        /* background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); */
         height: auto;
         width: 40px;
         transition:none;
