@@ -25,7 +25,6 @@
     <p class="contact_text_para">Thank you for visiting my website. Please fill out the form below or E-mail me at <a style="color:rgb(255, 187, 0); text-decoration: none; " target="#" href="https://mail.google.com"> amankhanaezakmi@gmail.com </a>and we will get back to your promptly regarding your request.</p>
     <div class="main">
         <div class="img">
-            <!-- <p>I'm Div 2</p> -->
             <img class="main_img" src="Images/contact_image.png" alt="">
             <h4 class="h4">GET IN TOUCH</h4>
             <hr>
@@ -34,7 +33,7 @@
             <div id="c_div" class="c_div3"><img src="Images/Address_image.png" alt="Address image"><p>Kondhwa, Pune Maharashtara</p></div>
         </div>
         <div class="form">
-            <form id="Contact-Form" onsubmit="submitToGoogleForm()">
+            <form id="Contact-Form" method="post" action="https://script.google.com/macros/s/AKfycbx8f_E8H4_CimeeaQZVO1bAdA8dCxBuCLiMLAiN-py7b7Ac-mq7PGRIEpQRPqVNj6MU/exec">
                   <label for="first-name">Enter Your Full Name: <input id="first-name" name="first-name" type="text" required /></label>
                   <label for="mob_num">Enter Your Mob No.: <input id="mob_num" name="mob_num" type="number" required/></label>
                   <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
@@ -45,6 +44,5 @@
             </form>
         </div>
     </div>
-    <script src="contactform.js"></script>
 </body>
 </html>
