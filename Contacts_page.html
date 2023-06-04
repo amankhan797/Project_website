@@ -33,7 +33,7 @@
             <div id="c_div" class="c_div3"><img src="Images/Address_image.png" alt="Address image"><p>Kondhwa, Pune Maharashtara</p></div>
         </div>
         <div class="form">
-            <form id="Contact-Form" method="post" action="https://script.google.com/macros/s/AKfycbxDHh_AZyEvq2p8iFDKsxeRpkJXPrbHOY8RpI9oAk-lH46AfbIt8nybT_FUUib_wKec/exec">
+            <form id="Contact-Form" method="post" action="https://script.google.com/macros/s/AKfycbxqM7Ib5SC4mGK5D3o3Iov3z0lWS8PUhKGyBcPylbvGOylxXofWvH6tifXJHUTS9NGG/exec">
                   <label for="first_name">Enter Your Full Name: <input id="first_name" name="first_name" type="text" required /></label>
                   <label for="mob_num">Enter Your Mob No.: <input id="mob_num" name="mob_num" type="number" required/></label>
                   <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
@@ -44,5 +44,26 @@
             </form>
         </div>
     </div>
+    <script>
+        window.addEventListener("load", function() {
+  const form = document.getElementById('Contact-Form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Thank you for contacting us, we'll get back to you soon!");
+    }).catch((e) => {
+        console.log('error: ' + e);
+        alert('Something went wrong! ' + 'Report us at amankhanaezakmi@gmail.com')
+    })
+  });
+});
+
+    </script>
 </body>
 </html>
