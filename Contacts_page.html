@@ -34,7 +34,7 @@
             <div id="c_div" class="c_div3"><img src="Images/Address_image.png" alt="Address image"><p>Kondhwa, Pune Maharashtara</p></div>
         </div>
         <div class="form">
-            <form method="post" action='https://register-demo.freecodecamp.org'>
+            <form id="Contact-Form" onsubmit="submitToGoogleForm()">
                   <label for="first-name">Enter Your Full Name: <input id="first-name" name="first-name" type="text" required /></label>
                   <label for="mob_num">Enter Your Mob No.: <input id="mob_num" name="mob_num" type="number" required/></label>
                   <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
@@ -45,5 +45,6 @@
             </form>
         </div>
     </div>
+    <script src="contactform.js"></script>
 </body>
 </html>
