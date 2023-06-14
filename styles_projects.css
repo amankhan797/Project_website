@@ -10,7 +10,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
 }
-nav {
+/* nav {
 	display:flex;
 	justify-content:center;
     background-color: #242424;
@@ -22,7 +22,7 @@ nav {
 	margin:auto 20px;
 	font-size: 1.3rem;
 	font-weight: bold;
-}
+} */
 .intro{
 	display:flex;
 	justify-content:center;
@@ -89,10 +89,6 @@ img:not(:hover){
 }
 /* mobile media query */
 @media (max-width: 300px) {
-	#a{
-		margin: auto 2.2px;
-		font-size: 0.7rem;
-	}
 	.gallery {
 		gap: 5px;
 		padding: 10px 5px;
@@ -105,10 +101,6 @@ img:not(:hover){
   } 
 /* tablet media query */
 @media (min-width: 300px) and (max-width: 768px) {
-	#a{
-		margin: auto 5px;
-		font-size: 0.9rem;
-	}
 	.gallery {
 		gap: 10px;
 		padding: 15px 7px;

@@ -8,7 +8,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 	font-weight:700;
 }
-nav {
+/* nav {
 	display:flex;
 	justify-content:center;
     background-color: #242424;
@@ -20,11 +20,11 @@ nav {
 	margin:auto 20px;
 	font-size: 1.3rem;
 	font-weight: bold;
-}
+} */
 .container{
     color: white;
     background: linear-gradient(to right, #000000, #090909);
-    height: 668px;
+    height: 100vh;
     display: flex;
 }
 .left{
@@ -156,10 +156,6 @@ nav {
 }
 /* mobile media query */
 @media (max-width: 300px) {
-    #a{
-		margin: auto 5px;
-		font-size: 0.9rem;
-	}
     body{
         background-color: #090909;
     }
@@ -271,10 +267,6 @@ nav {
 }   
 /* tablet media query */
 @media (min-width: 300px) and (max-width: 768px) {
-	#a{
-		margin: auto 5px;
-		font-size: 0.9rem;
-	}
     body{
         background-color: #090909;
     }

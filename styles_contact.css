@@ -10,7 +10,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
 }
-nav {
+/* nav {
 	display:flex;
 	justify-content:center;
     background-color: #242424;
@@ -22,10 +22,7 @@ nav {
 	margin:auto 20px;
 	font-size: 1.3rem;
 	font-weight: bold;
-}
-#a:active{
-    color: rgb(255, 187, 0);
-}
+} */
 .contact_text{
     margin-top: -27px;
     background: linear-gradient(to right, #000000, #090909);
@@ -125,10 +122,6 @@ input[type="submit"] {
 }
 /* mobile media query */
 @media (max-width: 300px) {
-	#a{
-		margin: auto 2.2px;
-		font-size: 0.7rem;
-	}
     .main{
         display:flex;
         flex-direction: column;
@@ -210,10 +203,6 @@ input[type="submit"] {
   } 
 /* tablet media query */
 @media (min-width: 300px) and (max-width: 768px) {
-	#a{
-		margin: auto 5px;
-		font-size: 0.9rem;
-	}
     .main{
         display:flex;
         flex-direction: column;
